@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Fusion Tables</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+	<style>
+	    ul { display:table; margin:0 auto;}
+	    iframe { border: none;}
+	</style>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span><a href="https://www.redata.ovh"><img src="images/logoRedondo.png" width="100%" heigth="100%"></a></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Google Fusion Tables</h1>
+								<p>Práctica para la asignatura <strong>Gestión de la información</strong> de la <a href="http://www.ubu.es/">Universidad de Burgos</a></p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#Heatmaps">Heatmaps</a></li>
+								<li><a href="#Maps">Mapas</a></li>
+								<li><a href="#Graphics">Graficos</a></li>
+								<li><a href="pruebaAPI">API</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p align="justify">Las tablas dinámicas de Google, también conocidas como <a href="https://support.google.com/fusiontables/answer/2571232?hl=en">Google Fusion Tables</a>, son un  servicio web de Google para la gestión de datos. Este servicio permite la recogida, integración,  visualización y  compartición de datos, incluyendo algunas funcionalidades propias de los sistemas de información geográficos tales como la creación de mapas, la geolocalización de datos y la integración con archivos KML y shapefiles.</p>
+							</article>
+
+						<!-- Heatmap -->
+							<article id="Heatmaps">
+								<h2 class="major">Heatmap</h2>
+								<h3><b>Heatmap de magnitud</b></h3>
+								<span class="image main"><iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col4+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.4306&amp;lng=-2.1386&amp;t=1&amp;z=2&amp;l=col1&amp;y=2&amp;tmplt=2&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.54&amp;hmr=50&amp;hmw=4&amp;hml=TWO_COL_LAT_LNG"></iframe></span>
+								<p>Mapa que muestra el heatmap de los terremotos según su magnitud.</p>
+
+								<h3><b>Heatmap de profundidad</b></h3>
+								<span class="image main"><iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1%2C+col2%2C+col3+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=37.4306&amp;lng=-2.1386&amp;t=1&amp;z=4&amp;l=col1&amp;y=7&amp;tmplt=11&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.6&amp;hmr=50&amp;hmw=3&amp;hml=TWO_COL_LAT_LNG"></iframe></span>
+								Mapa que muestra el heatmap de los terremotos según su profundidad.
+							</article>
+
+						<!-- Maps -->
+							<article id="Maps">
+								<h2 class="major">Mapas</h2>
+								<h3><b>Mapa de magnitud</b></h3>
+								<span class="image main"><iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew&amp;viz=MAP&amp;h=false&amp;lat=37.4306&amp;lng=-2.1386&amp;t=1&amp;z=2&amp;l=col2&amp;y=3&amp;tmplt=4&amp;hml=TWO_COL_LAT_LNG"></iframe></span>
+								<p>Mapa que muestra la magnitud de los terremotos situados en cada punto del mapa.</p>
+
+								<h3><b>Mapa de profundidad</b></h3>
+								<span class="image main"><iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew&amp;viz=MAP&amp;h=false&amp;lat=37.4306&amp;lng=-2.1386&amp;t=1&amp;z=2&amp;l=col2&amp;y=4&amp;tmplt=5&amp;hml=TWO_COL_LAT_LNG"></iframe></span>
+								<p>Mapa que muestra la profundidad de los terremotos situados en cada punto del mapa.</p>
+							</article>
+
+						<!-- Graphics -->
+							<article id="Graphics">
+								<h2 class="major">Graficos</h2>
+								<span><iframe width="747" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col3%2C+col4+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew+order+by+col3+asc&amp;viz=GVIZ&amp;t=SCATTER&amp;rmax=250&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_treatLabelsAsText=false&amp;gco_legacyScatterChartLabels=true&amp;gco_lineWidth=0&amp;gco_booleanRole=certainty&amp;gco_pointSize=7&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3A600%2C+%22min%22%3A0%7D%2C+%22minValue%22%3A0%2C+%22maxValue%22%3A600%2C+%22title%22%3A%22Profundidad%22%2C+%22viewWindowMode%22%3A%22pretty%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3A7.5%2C+%22min%22%3A2%7D%2C+%22minValue%22%3A2%2C+%22maxValue%22%3A7.5%2C+%22title%22%3A%22Magnitud%22%2C+%22viewWindowMode%22%3A%22pretty%22%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_legend=right&amp;gco_title=&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23ff0000%22%2C+%22pointSize%22%3A2%7D%7D&amp;att=true&amp;width=750&amp;height=500"></iframe></span>
+								<p> Gráfico que relaciona la magnitud del terremoto con la profundidad en la que se encuentra el epicentro.</p>
+								<span><iframe width="747" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=LINE_AGGREGATE&amp;isXyPlot=true&amp;bsize=0.0&amp;q=select+col3%2C+col4+from+1hndQE04Oq9MnCjBEO7CwEvXHsMP1mMhOj1PIA1Ew&amp;qrs=+where+col3+%3E%3D+&amp;qre=+and+col3+%3C%3D+&amp;qe=+order+by+col3+asc&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=750&amp;height=500"></iframe></span>
+								<p> Al igual que el anterior, aquí apreciamosla  relacio entre la magnitud del terremoto con la profundidad en la que se encuentra el epicentro.</p>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; DANIEL ARNAIZ.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/popup.js"></script>
+	</body>
+</html>
